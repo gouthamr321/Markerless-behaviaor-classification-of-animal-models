@@ -4,3 +4,4 @@ Here we have provided an open source software pipeline to estimate animal pose a
 
 This project was done by Gouthamrajan Nadarajan, Dowlette Alam El Din, and Zachary Smith and was supervised by [Dr. Anirban Dutta](http://medicine.buffalo.edu/faculty/profile.html?ubit=anirband) and was optimized for animal models from [Dr. Jinwoo Park's](http://medicine.buffalo.edu/faculty/profile.html?ubit=jinwoopa) lab.
 
+<video src="demo.mp4" width="320" height="200" controls preload></video>
