@@ -32,8 +32,15 @@ Rearing is defined as when the animal puts its weight on its hind legs and stand
 These features were then used to train an support vector machine for the binary classification of rearing vs. non-rearing. We found that we can achieve the best results(94% accuracy) on models that are trained and applied on the same rat model. See Rearing_prediction.ipynb for more details.
 
 ### Sterotopy behavior Classification
-Stereotopic behaivor in animal models is defined as behaviors that are repetitive and high frequency and serve no obvious purpose. For stereotopy behavior classification, we utilize our deeplabcut marker predictions to train an LSTM model to classify sequences of one minute time sequences for binary classification of stereotopic behavior vs. non stereotopic behavior. Here we use the coordinate predictions for the snout and the centroid as our Features. We achieved an 71% classification accuracy on a holdout testing set.
+Stereotopic behaivor in animal models is defined as behaviors that are repetitive and high frequency and serve no obvious purpose. For stereotopy behavior classification, we utilize our deeplabcut marker predictions to train an LSTM model to classify sequences of one minute time sequences for binary classification of stereotopic behavior vs. non stereotopic behavior. Here we use the coordinate predictions for the snout and the centroid as our Features. We achieved an max testing accuracy of 80% on a holdout testing set.
 
+Refer to Stereotopy_Preiciton.ipynb for more details
+
+### Locomotion Analysis
+
+Total location is an important metric for many animal studies. Using the marker prediction from deeplabcut for the centroid marker, we have a pipeline to measure the total distance traveled by the rat in an given experiment.
+
+Refer to Locomotion.ipynb for more details
 
 
 
