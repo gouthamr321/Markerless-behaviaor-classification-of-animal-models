@@ -28,7 +28,7 @@ Once the model was suffeciently trained it can be applied to different animal da
 
 
 ### Rearing Classification
-<img align="right" width="250" height="250" src=rearing_example.png caption='Deeplabcut'>
+<img align="right" width="230" height="250" src=rearing_example.png caption='Deeplabcut'>
 
 Rearing is defined as when the animal puts its weight on its hind legs and stand with forelimbs above ground. Using the marker prediction data, we derive the following features below:
 
