@@ -59,7 +59,7 @@ Refer to Locomotion.ipynb for more details
 In the Miscallaneous folder, you can find applications of our algoirthums for specific test cases as well as data visualizations for 3D data.
 
 A couple selected files of interest include:
-Misclalaneous/IntegrateXYZ.py - Integrate 2d camera data with Intel RealSense 3D camera data
-Miscallaneous/ply_generation.py - generate pointcloud data
-Miscallaneous/pointcloud_rendering.py - visualize pointclloud data
-Miscallaneous/stereotopy_prediction_trial8.ipynb - application of trained model to specific test case
+- Misclalaneous/IntegrateXYZ.py - Integrate 2d camera data with Intel RealSense 3D camera data
+- Miscallaneous/ply_generation.py - generate pointcloud data
+- Miscallaneous/pointcloud_rendering.py - visualize pointclloud data
+- Miscallaneous/stereotopy_prediction_trial8.ipynb - application of trained model to specific test case
