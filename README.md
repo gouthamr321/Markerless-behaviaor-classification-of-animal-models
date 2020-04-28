@@ -34,7 +34,7 @@ Rearing is defined as when the animal puts its weight on its hind legs and stand
 
 - Euclidean distance from the Snout to the Base of the tail
 - Euclidean distance from the Snout to the Right and left hip
-- Deeplabcut's model confidence in prediciton of the right and left centroid locations
+- Deeplabcut's model confidence in prediciton of the centroid markers
 
 These features were then used to train an support vector machine for the binary classification of rearing vs. non-rearing. We found that we can achieve the best results(94% accuracy) on models that are trained and applied on the same rat model. See Rearing_prediction.ipynb for more details.
 
