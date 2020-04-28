@@ -16,13 +16,13 @@ In this work we leverage the [Deeplabcut toolbox](http://www.mousemotorlab.org/d
 <img align="left" width="250" height="250" src=demo.gif caption='Deeplabcut'>
 
 We trained our Model to learn to detect the features:
-- Snout
-- Eyes(Left and Right)
-- Ears(Left and Right)
-- Front and Back paws
-- Centroid and Right and Left ends of Centorid
-- Hips(Left and Right)
-- Base of the tail
+  - Snout
+  - Eyes(Left and Right)
+  - Ears(Left and Right)
+  - Front and Back paws
+  - Centroid and Right and Left ends of Centorid
+  - Hips(Left and Right)
+  - Base of the tail
 
 Once the model was suffeciently trained it can be applied to different animal data to obtain marker coordinate predictions in .csv format. We leverged these marker predictions on our rat models to derive features for behavior classification.
 
