@@ -28,7 +28,7 @@ Once the model was suffeciently trained it can be applied to different animal da
 
 
 ### Rearing Classification
-<img align="left" width="230" height="250" src=rearing_example.png caption='Deeplabcut'>
+<img align="right" width="230" height="250" src=rearing_example.png caption='Deeplabcut'>
 
 Rearing is defined as when the animal puts its weight on its hind legs and stand with forelimbs above ground. Using the marker prediction data, we derive the following features below:
 
@@ -41,7 +41,7 @@ These features were then used to train an support vector machine for the binary 
 ### Sterotopy behavior Classification
 
 
-<img align="right" width="250" height="250" src=stereotopy.gif caption='Deeplabcut'>
+<img align="left" width="250" height="250" src=stereotopy.gif caption='Deeplabcut'>
 
 Stereotopic behaivor in animal models is defined as behaviors that are repetitive and high frequency and serve no obvious purpose. For stereotopy behavior classification, we utilize our deeplabcut marker predictions to train an LSTM model to classify sequences of one minute time sequences for binary classification of stereotopic behavior vs. non stereotopic behavior. Here we use the coordinate predictions for the snout and the centroid as our Features. We achieved an max testing accuracy of 80% on a holdout testing set.
 
