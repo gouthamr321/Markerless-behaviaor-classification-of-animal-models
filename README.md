@@ -1,7 +1,8 @@
 # Markerless Pose and Behavior Prediction for Rat Models
 
 <img align="right" width="250" height="250" src=mouse.png caption='Deeplabcut'>
-Here we have provided an open source software pipeline to estimate animal pose and detect a limited set of animal behaviors that are important for biomedical animal studies which include locomotion analysis, prevelence of Rearing, and prevelence of stereotopic behavior.
+
+Here we have provided an open source software pipeline to estimate animal pose and detect a limited set of animal behaviors that are important for biomedical animal studies which include locomotion analysis, prevelence of rearing, and prevelence of stereotopic behavior.
 
 
 
@@ -9,29 +10,27 @@ This project was done by Gouthamrajan Nadarajan, Dowlette Alam El Din, and Zacha
 
 ## Our Process
 
-In this work we leverage the [Deeplabcut toolbox](http://www.mousemotorlab.org/deeplabcut) which is a software pipeline for Markerless pose estimation using deep learning. The documentation can be found [here](https://github.com/AlexEMG/DeepLabCut) , but we provide an brief tutorial on how we levereged this toolbox for our work in Deeplabcut_marker_pred.ipynb. 
+In this work we leverage the [Deeplabcut toolbox](http://www.mousemotorlab.org/deeplabcut) which is a software pipeline for Markerless pose estimation using deep learning. The documentation can be found [here](https://github.com/AlexEMG/DeepLabCut) , but we provide an brief tutorial on how we levereged this toolbox for our work in DeepLabCut_Implementation.ipynb. 
 
 
 <img align="right" width="250" height="250" src=demo.gif caption='Deeplabcut'>
 
 We trained our Model to learn to detect the features:
-- Snout
-- Eyes(Left and Right)
-- Ears(Left and Right)
-- Front and Back paws
-- Centroid and Right and Left ends of Centorid
-- Hips(Left and Right)
-- Base of the tail
+  - Snout
+  - Eyes(Left and Right)
+  - Ears(Left and Right)
+  - Front and Back paws
+  - Centroid and Right and Left ends of Centorid
+  - Hips(Left and Right)
+  - Base of the tail
 
 Once the model was suffeciently trained it can be applied to different animal data to obtain marker coordinate predictions in .csv format. We leverged these marker predictions on our rat models to derive features for behavior classification.
 
 
 ### Rearing Classification
+<img align="right" width="230" height="250" src=rearing_example.png caption='Deeplabcut'>
 
 Rearing is defined as when the animal puts its weight on its hind legs and stand with forelimbs above ground. Using the marker prediction data, we derive the following features below:
-
-<img align="right" width="250" height="250" src=rearing_example.png caption='Deeplabcut'>
-
 
 - Euclidean distance from the Snout to the Base of the tail
 - Euclidean distance from the Snout to the Right and left hip
@@ -42,7 +41,7 @@ These features were then used to train an support vector machine for the binary 
 ### Sterotopy behavior Classification
 
 
-<img align="right" width="250" height="250" src=stereotopy.gif caption='Deeplabcut'>
+<img align="left" width="250" height="250" src=stereotopy.gif caption='Deeplabcut'>
 
 Stereotopic behaivor in animal models is defined as behaviors that are repetitive and high frequency and serve no obvious purpose. For stereotopy behavior classification, we utilize our deeplabcut marker predictions to train an LSTM model to classify sequences of one minute time sequences for binary classification of stereotopic behavior vs. non stereotopic behavior. Here we use the coordinate predictions for the snout and the centroid as our Features. We achieved an max testing accuracy of 80% on a holdout testing set.
 
