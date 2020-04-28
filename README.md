@@ -10,7 +10,7 @@ This project was done by Gouthamrajan Nadarajan, Dowlette Alam El Din, and Zacha
 
 ## Our Process
 
-In this work we leverage the [Deeplabcut toolbox](http://www.mousemotorlab.org/deeplabcut) which is a software pipeline for Markerless pose estimation using deep learning. The documentation can be found [here](https://github.com/AlexEMG/DeepLabCut) , but we provide an brief tutorial on how we levereged this toolbox for our work in Deeplabcut_marker_pred.ipynb. 
+In this work we leverage the [Deeplabcut toolbox](http://www.mousemotorlab.org/deeplabcut) which is a software pipeline for Markerless pose estimation using deep learning. The documentation can be found [here](https://github.com/AlexEMG/DeepLabCut) , but we provide an brief tutorial on how we levereged this toolbox for our work in DeepLabCut_Implementation.ipynb. 
 
 
 <img align="right" width="250" height="250" src=demo.gif caption='Deeplabcut'>
